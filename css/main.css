@@ -72,6 +72,11 @@ a:hover {
   color: linear-gradient(left, #feef6a, #A162DF);
 }
 
+.show-error {
+  color: rgb(196, 11, 11);
+  font-family: The-Girl-Next-Door;
+}
+
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
@@ -222,7 +227,8 @@ iframe {
   width: 100%;
   position: relative;
   border-bottom: 2px solid #adadad;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top:20px;
 }
 
 .input100 {
@@ -494,4 +500,12 @@ iframe {
 }
 
 
+.space-padding {
+  padding-bottom:10px;
+  padding-bottom:10px;
+}
 
+.error{
+  font-family: Poppins-Regular;
+  color:#df09c2;
+}

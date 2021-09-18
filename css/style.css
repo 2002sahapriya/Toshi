@@ -1,3 +1,14 @@
+@font-face {
+    font-family: The-Girl-Next-Door;
+    src: url('../fonts/poppins/thegirlnextdoor.ttf'); 
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+
 body {
     background: #FFFBEC;
 }
@@ -52,3 +63,4 @@ form {
     font-style: normal;
     font-weight: normal;
 }
+
