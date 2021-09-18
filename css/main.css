@@ -1,7 +1,4 @@
 
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -29,7 +26,63 @@
   font-family: The-Girl-Next-Door;
   src: url('../fonts/poppins/thegirlnextdoor.ttf'); 
 }
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+.container-dashboard {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: top;
+  background: #FEE384;  
+}
 
+.page-content {
+  align-items: top;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.top-bar {
+  width: 100%;
+  height:100px;
+  background: #FFFBEC;
+}
+
+.menu-btn {
+  position: absolute;
+  left: 1075px;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+
+.menu-btn2 {
+  position: absolute;
+  left: 1240px;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+
+.content-btn {
+  justify-content: center;
+  align-items: top;
+  font-family: Poppins-Regular;
+	font-size: 36px;
+	color: #666666;
+  line-height: 1.5;
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -53,10 +106,11 @@ a { /*sign up*/
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+  text-decoration: none;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
 }
 
 a:focus {
@@ -64,8 +118,8 @@ a:focus {
 }
 
 a:hover {
-	text-decoration: none;
-  color: #feef6a;
+	text-decoration: underline;
+  color: #A162DF;
   color: -webkit-linear-gradient(left, #feef6a, #A162DF);
   color: -o-linear-gradient(left, #feef6a, #A162DF);
   color: -moz-linear-gradient(left, #feef6a, #A162DF);
