@@ -1,30 +1,28 @@
 <?php
-// This for login page 
+    session_start();
+    include("connection.php");
+
+    // define variables for validation
+    $username = ""; $username_err="";
+    $email =""; $email_err="";
+    $password =""; $password_err="";
+
+    
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        if(empty($_POST["username"])) {
+            $username_err = "Please enter a username";
+        } else {
+            $username = validate_data($_POST["username"]);
+        }
+    }
+
+    function validate_data($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login to Toshi</h1>
-    <h3>This is or that ?</h3>
-    <!-- Login form-->
-    <form>
-        <!--Username-->
-        <label for="username"> Username:</label><br>
-        <input type="text" name="username" id="username" placeholder="Enter Username"> <br>
-        <!--Email-->
-        <label for="email">Email:</label> <br>
-        <input type="text" name="email" id="email" placeholder="Enter Email"><br>
-        <!--Password-->
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password" placeholder="Enter Password"><br>
-    </form>
-</body>
-</html>

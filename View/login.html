@@ -10,20 +10,21 @@
     <h1>Login to Toshi</h1>
     <h3>This is or that ?</h3>
     <!-- Login form-->
+    <form method="post" action="../php/login.php">
         <!--Username-->
         <label for="username"> Username:</label><br>
-        <input type="text" name="username" id="username" placeholder="Enter Username"><br>
+        <input type="text" name="username" id="username" placeholder="Enter Username" required><br>
         <br>
         <!--Email-->
         <label for="email">Email:</label><br>
-        <input type="text" name="email" id="email" placeholder="Enter Email"><br>
+        <input type="text" name="email" id="email" placeholder="Enter Email" required><br>
         <br>
         <!--Password-->
         <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+        <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
         <br>
         <!-- Login Button-->
-        <input type="submit" value="Submit">
+        <input type="submit" value="Login">
     </form>
 </body>
 </html>
