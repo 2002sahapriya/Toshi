@@ -30,7 +30,6 @@
 [ RESTYLE TAG ]*/
 .container-dashboard {
   width: 100%;  
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -43,10 +42,22 @@
 }
 
 .page-content {
-  align-items: top;
-  width: 100%;
-  display: block;
-  position: relative;
+  width: 600px;
+  background: #FFFBEC;
+  overflow: hidden;
+
+  border: 6px solid #D0B1EF;
+  box-sizing: border-box;
+  border-radius: 22px;
+  padding: 77px 55px 33px 55px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar {
@@ -84,6 +95,25 @@
   line-height: 1.5;
 }
 
+.nav-block {
+  position: absolute;
+  width: 410px;
+  height: 226px;
+  left: 200px;
+  top: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background: #FFFBEC;
+  border: 6px solid #D0B1EF;
+  box-sizing: border-box;
+  border-radius: 22px;
+}
+
+.rectangle {
+  background: #FEE384;
+  width: 75px;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -96,6 +126,7 @@
 
 body, html {
 	height: 100%;
+  background: #FEE384;
 	font-family: Poppins-Regular, sans-serif;
 }
 
@@ -310,6 +341,7 @@ iframe {
 }
 
 .focus-input100::before {
+    color:transparent;
   content: "";
   display: block;
   position: absolute;
@@ -329,7 +361,6 @@ iframe {
   background: -moz-linear-gradient(left, #feef6a, #A162DF);
   background: linear-gradient(left, #feef6a, #A162DF);
 }
-
 .focus-input100::after {
   font-family: Poppins-Regular;
   font-size: 15px;
@@ -350,7 +381,7 @@ iframe {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100::after {
+.input100:focus + .focus-input100::after, .input100:valid + .focus-input100::after{
   top: -15px;
 }
 
@@ -358,7 +389,7 @@ iframe {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input100::after {
+.has-val.input100 + .focus-input100::after, focus-input100:valid + .focus-input100::after{
   top: -15px;
 }
 

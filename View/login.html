@@ -31,22 +31,20 @@ include("../php/login.php");
 				<!--Login Form-->
 				<form class="login100-form validate-form" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>">
 					<!--username-->
-					<div class="space-padding">
-						<div class="wrap-input100 validate-input" data-validate="Enter username">
-							<span class="btn-show-pass">
-								 <i class="zmdi zmdi-eye"></i>
-							</span>
-							<input class="input100" type="text" name="username" id="username">
-							<span class="focus-input100" for="username" data-placeholder="Username"></span>
-						</div> 
-						<span class="error"><?php echo $username_err?></span>
-						<br>
-					</div>
+					<div class="wrap-input100 validate-input" data-validate="Enter username">
+						<span class="btn-show-pass">
+								<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="text" name="username" id="username" required>
+						<span class="focus-input100" for="username" data-placeholder="Username"></span>
+					</div> 
+					<span class="error"><?php echo $username_err?></span>
+					<br>
 					
 					<!--Email-->
 					<div class="space-padding">
 						<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-							<input class="input100" type="text" name="email" id="email">
+							<input class="input100" type="text" name="email" id="email" required>
 							<span class="focus-input100" data-placeholder="Email"></span>
 						</div>
 						<span class="error"><?php echo $email_err?></span>
@@ -59,7 +57,7 @@ include("../php/login.php");
 							<span class="btn-show-pass">
 								<i class="zmdi zmdi-eye"></i>
 							</span>
-							<input class="input100" type="password" name="password" id="password">
+							<input class="input100" type="password" name="password" id="password" required>
 							<span class="focus-input100" data-placeholder="Password"></span>
 						</div>
 						<span class="error"><?php echo $password_err?></span>
