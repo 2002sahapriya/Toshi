@@ -10,9 +10,8 @@
 
     // check connection
     if (!$connect) {
-        die("failed to connect!");
-        mysqli_close($connect);
+        die('<script>console.log("failed to connect!")</script>;');
     } else {
-        echo("Database connected!");
+        echo ('<script>console.log("Database connected.");</script>');
     }
 ?>

@@ -9,10 +9,9 @@
     $connect = mysqli_connect($servername, $username, $password);
     // check connection
     if (!$connect) {
-        die("Database Connection Failed." . $connect);
-        mysqli_close($connect);
+        die("<script>console.log('Failed connection')</script>");
     } else {
-        echo("Database connected!");
+        echo("<script>console.log('Database connected.')</script>");
     }
 
      // Create Database
