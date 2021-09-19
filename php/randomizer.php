@@ -25,7 +25,7 @@ static $store_value;
         $num_input = (int) $num_input;
         echo $num_input;
         if($num_input > 0 && $num_input <= 10) {
-            $form_choices = "<div>You have <br>$num_input<br>choices!<br><span>Select below to begin!</span>";
+            $form_choices = "<div>You have $num_input choices!<br><span>Select below to begin!</span>";
             $form_element="";
             for ($element = 0; $element < $num_input; $element++) {
                 $name = "input" . ($element + 1);
