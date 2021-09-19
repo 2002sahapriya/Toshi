@@ -86,28 +86,11 @@
   line-height: 1.5;
 }
 
-.content-btn {
-  justify-content: center;
-  align-items: top;
-  font-family: Poppins-Regular;
-	font-size: 36px;
-	color: #666666;
-  line-height: 1.5;
-}
-
-.nav-block {
-  position: absolute;
-  width: 410px;
-  height: 226px;
-  left: 200px;
-  top: 200px;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  background: #FFFBEC;
-  border: 6px solid #D0B1EF;
-  box-sizing: border-box;
-  border-radius: 22px;
+.dash-btn {
+  justify-content:center;
+  text-align: center;
+  font-family: The-Girl-Next-Door;
+	font-size: 24px;
 }
 
 .rectangle {
@@ -115,6 +98,14 @@
   width: 75px;
 }
 
+.page-header {
+  display: block;
+  font-family: The-Girl-Next-Door;
+  font-size: 42px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
