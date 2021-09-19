@@ -605,16 +605,3 @@ iframe {
   color:#df09c2;
 }
 
-.rectangle {
-  height: 600px !important;
-  width:700px !important;
-  background-color: #A162DF !important;
-  border-radius: 10px;
-  box-shadow: 10px 10px rgba(0,0,0,0.7);
-  /* margin:auto; */
-  justify-content: center !important;
-  align-items: center !important;
-  /* padding-top:200px; */
-vertical-align: middle !important;
-
-}
