@@ -16,6 +16,9 @@
             //echo "<script> alert('Please enter a username');</script>";
         } else {
             $username = validate_data($_POST["username"]);
+            if(!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
+                $username_err = "Only alphanumeric characters allowed";
+            }
         }
         // email validation 
         if(empty($_POST["email"])) {
