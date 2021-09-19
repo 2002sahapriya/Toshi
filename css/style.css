@@ -250,7 +250,7 @@ font-family: Poppins-Medium;
 }
 
 .note {
-    width: 100%;  
+    width: 30%;  
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -259,7 +259,14 @@ font-family: Poppins-Medium;
     flex-wrap: wrap;
     justify-content:center;
     align-items: top;
-    background: #FEE384;
+    background: #FFFBEC;
+    position: absolute;
+    top: 105%;
+    left: 35%;
+}
+
+.options {
+    
 }
 
 .modal {
