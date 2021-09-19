@@ -249,7 +249,7 @@ font-family: Poppins-Medium;
 }
 
 .note {
-    width: 30%;  
+    width: 400px;  
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -266,13 +266,32 @@ font-family: Poppins-Medium;
 
 .options {
     background: #FFFBEC;
-    width: 75px;
+    width: 400px;
     position: absolute;
     top: 125%;
-    left: 40%;
+    left: 0%;
     justify-content: center;
     align-items: top;
+    text-align: center;
 }
+
+ul {
+    width: 400px;
+    background: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+ul.li {
+    padding: 12px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
 
 .modal {
     display: none; /* Hidden by default */
