@@ -505,3 +505,11 @@ iframe {
   font-family: Poppins-Regular;
   color:#df09c2;
 }
+
+.username-text{
+  font-family: Poppins-Medium;
+  font-weight: bold;
+  font-size: 100px;
+  color: #A162DF;
+
+}

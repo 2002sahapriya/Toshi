@@ -1,3 +1,6 @@
+<?php
+include("../php/landing.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +27,12 @@
 	<br>
 	<br>
 	<div>
+		
 		<span class="page-header">
+			<span class="username-text">
+				Hi, <?php echo $user_data['firstname'] . " " . $user_data['lastname']; ?>!
+			</span>
+			<br>
 			Decide Now!
 		</span>
 	</div>
