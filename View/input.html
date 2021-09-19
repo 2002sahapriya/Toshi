@@ -8,7 +8,7 @@ include("../php/randomizer.php");
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toshi Register Now</title>
+    <title>Toshi Randomize Input</title>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -24,7 +24,7 @@ include("../php/randomizer.php");
 			<div class="wrap-login100">
 				<!--Toshi Logo-->
 				<span class="login100-form-title p-b-26">
-					Sign Up for
+					Randomize
 				</span>
 				<img src="../assets/ToshiWithSlogan1.png" alt="Toshi Logo" width = "340">
 				<!--Register Now-->
@@ -37,52 +37,8 @@ include("../php/randomizer.php");
 						</div>
 						<span class="error"><?php echo $firstname_err;?></span>
 					</div>
+				
 					
-					<!--Last Name-->
-					<div class="space-padding">
-						<div class="wrap-input100 validate-input" data-validate = "IE Potter">
-							<input class="input100" type="text" name="lastname">
-							<span class="focus-input100" data-placeholder="Last Name"></span>
-						</div>
-						<span class="error"><?php echo $lastname_err; ?></span>
-					</div>
-					
-					<!--Username-->
-					<div class="space-padding">
-						<div class="wrap-input100 validate-input" data-validate="Enter username">
-							<span class="btn-show-pass">
-								<i class="zmdi zmdi-eye"></i>
-							</span>
-							<input class="input100" type="text" name="username" id="username">
-							<span class="focus-input100" data-placeholder="Username"></span>
-						</div>
-						<span class="error"><?php echo $username_err; ?></span>
-					</div>
-					
-					<!--Email-->
-					<div class="space-padding">
-						<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-							<input class="input100" type="text" name="email" id="email">
-							<span class="focus-input100" data-placeholder="Email"></span>
-						</div>
-						<span class="error"><?php echo $email_err; ?></span>
-					</div>
-					
-					<!--Password-->
-					<div class="space-padding">
-						<div class="wrap-input100 validate-input" data-validate="Enter password">
-							<span class="btn-show-pass">
-								<i class="zmdi zmdi-eye"></i>
-							</span>
-							<input class="input100" type="password" name="password" id="password">
-							<span class="focus-input100" data-placeholder="Password"></span>
-						</div>
-						<span class="error"><?php echo $password_err; ?></span>	
-					</div>
-					<!--Registration failed-->
-					<div class="space-padding">
-						<span class="error"><?php echo $server_err;?></span>
-					</div>
 					<!--Submit -->
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">

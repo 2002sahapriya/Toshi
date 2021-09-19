@@ -218,8 +218,42 @@ h2 {
       font-size: 22px;
     
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 34%; 
+}
+
+.choices-input {
+  width: 30%;
+  background: #FFFBEC;
+  overflow: hidden;
+
+  border: 6px solid #A162DF;
+  box-sizing: border-box;
+  border-radius: 22px;
+  padding: 7px 55px 3px 55px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-left: 10px;
+
+  justify-content:center;
+  text-align: center;
+  font-family: The-Girl-Next-Door;
+  font-size: 22px;
+  
+  position: absolute;
+  top: 40%;
+  left: 34%; 
+
 }
 
 .toshidecidesbar {

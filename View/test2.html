@@ -12,7 +12,7 @@ include("../php/randomizer.php");
 <link rel="stylesheet" type="text/css" href="../css/util.css">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="script" type="text/javascript" href="../javascript/main.js";
+<!-- <link rel="script" type="text/javascript" href="../javascript/main.js"; -->
 <!--===============================================================================================-->
 </head>
 <body>
@@ -27,7 +27,7 @@ include("../php/randomizer.php");
 	<br>
 	<br>
 	<br>
-	<div>
+    <div>
 		<span class="page-header">
 			Randomizer
 		</span>
@@ -35,21 +35,18 @@ include("../php/randomizer.php");
     <br>
     <br>
     <br>
+    <!--Trigger/Open Modal-->
     <div>
         <button id="get-started">
-            <span class="startrandom">
-                Get Started
-            </span>
+            <span class="startrandom">Get Started</span>
+                
         </button>
     </div>
-
-    <!--Modal 1: user Input-->
-    
-       <!--The Modal: Num Inputs-->
-       <div id="modal1" class="modal">
+    <!--The Modal: Num Inputs-->
+    <div id="modal1" class="modal">
         <!--Modal Content-->
         <div class="modal-content">
-            <span class="close" id="close-num">&times;</span>
+            <span class="close">&times;</span>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
                 <div class="wrap-input100 htmlvalidate-input">
                     <input class="input100" type="text" name="num-inputs" id="num-inputs" required>
@@ -70,7 +67,7 @@ include("../php/randomizer.php");
         //Get the button that opens the modal
         var btn = document.getElementById("get-started");
         // Get the span element that closes the modal
-        var span = document.getElementById("close-num");
+        var span = document.getElementsByClassName("close")[0];
         // When the user clicks the button, open the modal
         btn.onclick = function() {
             modal.style.display = "block";
@@ -79,107 +76,42 @@ include("../php/randomizer.php");
         span.onclick = function(){
             modal.style.display = "none";
         }
-
-        window.onclick = function(event) {
-            if(event.target == modal) {
-                modal.style.display = "none";
-            } 
-        }
-    </script>
-    <div>
-         <?php echo $form_choices;?>
-    </div>
-    <!--Modal 1 : Ends here-->
-    <div>
-        <button id="choices">
-            <span class="choices-input">
-                Choices?
-            </span>
-        </button>
-    </div>
-    <!--Modal 2: user Input-->
-    
-       <!--The Modal: user inputs-->
-       <div id="modal2" class="modal">
-        <!--Modal Content-->
-        <div class="modal-content">
-            <span class="close" id="close-input">&times;</span>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
-                <div class="wrap-input100 htmlvalidate-input">
-                     <?php echo $form_element; ?>
-                </div>
-                <button class="lil-btn" id="show-results">
-                    <input type="submit" value="Show Results">
+    </script> 
+    <span><?php echo $form_input; ?></span>
+    <!-- Modal : user inputs -->
+    <!-- <div id="modal2" class="modal"> -->
+        <!--Modal content-->
+        <!-- <div class="modal-content">
+            <span class="close2">&times;</span>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> -->
+                <!--Input fields -->
+                <!--Randomize Button-->
+                <!-- <button class="lil-btn" id="randomize">
+                    <input type="submit" value="Randomize">
                 </button>
             </form>
         </div>
-    </div>
+    </div> -->
 
-    <!--Modal Num Inputs Scripts-->
-    <script>
+    <!--Script: Modal user inputs-->
+    <!-- <script>
         // Get the modal
         var modal2 = document.getElementById("modal2");
-        //Get the button that opens the modal
-        var btn = document.getElementById("choices");
+        // Get the button that opens the modal
+        var btn = document.getElementById("nextBtn");
         // Get the span element that closes the modal
-        var span = document.getElementById("close-input");
-        // When the user clicks the button, open the modal
+        var span = document.getElementByClassName("close")[0];
+        // When the user clicks the buttin, open the modal
         btn.onclick = function() {
+            modal.style.display = "none";
             modal2.style.display = "block";
         }
-        // When the user clicks on x to close the modal
-        span.onclick = function(){
+        // When the user clicks the x, close the modal
+        span.onclick = function() {
             modal2.style.display = "none";
         }
-        window.onclick = function(event) {
-            if(event.target == modal2) {
-                modal2.style.display = "none";
-            } 
-        }
-    </script>
+    </script> -->
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="toshidecidesbar">
-        <span class="toshidecides">
-            Toshi  Decides...
-        </span>
-        <span class="decision">
-            <?php echo $decision; ?>
-        </span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div>
-        <span class="note">
-            Your Options Were:
-            <span class="options">
-                <ul>
-                    <li>option 1</li>
-                    <li>option 2</li>
-                    <li>option 3</li>
-                </ul>
-            </span>
-        </span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
 </body>
 </html>
