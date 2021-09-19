@@ -43,13 +43,13 @@
             $username = validate_data($_POST["username"]);
             $email = validate_data($_POST["email"]);
             $password = validate_data($_POST["password"]);
-            $query = "SELECT * FROM toshi_infomatics WhERE email='$email' and user_password='$password' limit 1";
+            $query = "SELECT * FROM toshi_infomatics WHERE email='$email' AND user_password='$password' limit 1";
             $result = mysqli_query($connect, $query);
             $server_err = NULL;
 
             if($result && mysqli_num_rows($result) > 0) {
                 $user_data = mysqli_fetch_assoc($result);
-                if($user_data['password'] === $password && $user_data['email'] === $email && $user_data['username'] === $username) {
+                if($user_data['user_password'] === $password && $user_data['email'] === $email && $user_data['username'] === $username) {
                     echo("<script>console.log('Login access granted')</script>");
                     header("Location: dashboard.html");
                     
