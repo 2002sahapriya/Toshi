@@ -245,6 +245,15 @@ font-family: Poppins-Medium;
 }
 
 .note {
-    
+    width: 100%;  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: top;
+    background: #FEE384;
 }
 
