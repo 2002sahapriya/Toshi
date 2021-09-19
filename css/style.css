@@ -8,6 +8,11 @@
     src: url('../fonts/poppins/Poppins-Regular.ttf'); 
 }
 
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../fonts/poppins/Poppins-Light.ttf'); 
+  }
+
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 .container-dashboard {
@@ -25,16 +30,16 @@
   
   .page-content {
     width: 100%;
+    height: 50%;
     background: #FFFBEC;
     overflow: hidden;
   
     border: 6px solid #D0B1EF;
-    box-sizing: border-box;
     border-radius: 22px;
-    padding: 77px 55px 33px 55px;
-    padding-left: 50px;
-    padding-right: 50px;
-  
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+    padding-right: 50px;  
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
@@ -87,9 +92,9 @@
   
   .dash-btn {
     width: 33%;
-    height: 20%;
+    height: 100;
     justify-content:center;
-    text-align: center;
+    text-align:start;
     font-family: The-Girl-Next-Door;
       font-size: 24px;
   }
@@ -217,8 +222,91 @@ h2 {
     left: 34%; 
 }
 
-.toshidecides {
+.toshidecidesbar {
     width: 100%;
     height: 10%;
     background: #D0B1EF;
   }
+
+.toshidecides {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #000000;
+  line-height: 1.5;
+}
+
+.decision {
+font-family: Poppins-Medium;
+  font-weight: bold;
+  font-size: 90px;
+  color: #A162DF;
+  position:absolute;
+  top: 80%;
+  left: 35%;
+}
+
+.note {
+    width: 100%;  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: top;
+    background: #FEE384;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    text-justify: top;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lil-btn {
+    width: 50;
+    height: 50;
+    justify-content:auto;
+    text-align: center;
+    font-family: Poppins-Light;
+    font-size: 18px;
+    float: right;
+}
