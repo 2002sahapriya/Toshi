@@ -42,7 +42,7 @@
 }
 
 .page-content {
-  width: 600px;
+  width: 500px;
   background: #FFFBEC;
   overflow: hidden;
 
@@ -66,17 +66,34 @@
   background: #FFFBEC;
 }
 
-.menu-btn {
+.menu-btn1 {
   position: absolute;
-  left: 1075px;
+  left: 740px;
   top: 35px;
   font-family: Poppins-Regular;
 	font-size: 20px;
 	color: #666666;
   line-height: 1.5;
 }
-
 .menu-btn2 {
+  position: absolute;
+  left: 940px;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+.menu-btn3 {
+  position: absolute;
+  left: 1080px;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+.menu-btn4 {
   position: absolute;
   left: 1240px;
   top: 35px;
