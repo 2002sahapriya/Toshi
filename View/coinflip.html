@@ -7,7 +7,7 @@ include("../php/randomizer.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomizer</title>
+    <title>Coin Flip</title>
 <!--===============================================================================================-->	
 <link rel="stylesheet" type="text/css" href="../css/util.css">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -28,7 +28,7 @@ include("../php/randomizer.php");
 	<br>
 	<div>
 		<span class="page-header">
-			Randomizer
+			Coin Flip
 		</span>
 	</div>
     <br>
@@ -42,48 +42,32 @@ include("../php/randomizer.php");
         </button>
     </div>
 
-    <!--Modal Starts here-->
-
      <!-- The Modal -->
     <div id="modal1" class="modal">
     <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Text Input</p>
-                <!-- <form method="post" action="<?php echo htmlspecials($_SERVER['PHP_SELF']);?>">
-                <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="num-inputs" id="num-inputs" required>
-                        <span class="focus-input100" for="num-inputs" data-placeholder="How Many Inputs?"></span> 
-                </div>
-                <span class="error"><?php echo $num_input_err;?></span>
-                <button class="lil-btn" id="nextBtn">
-                    <input type="submit" value="Next">
-                </button>
             <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
                 <input class="input100" type="text" name="num-inputs" id="n-inputs" required>
-                <span class="focus-input100" data-placeholder="How Many Choices?"></span>
+                <span class="focus-input100" data-placeholder="How Many Inputs?"></span>
             </div>
-            </form> -->
+            <br>
+            <button class=lil-btn id="nextBtn">Next</button>
         </div>
     </div>
-
-    <!--Modal 2-->
-    <!-- <div id="modal2" class="modal">
+    
+    <div id="modal2" class="modal">
+    <!-- Modal content -->
         <div class="modal-content">
             <span class="close2">&times;</span>
-            <form>
-                <div class="wrap-input100 validate-input">
-                    <input class="input100" type="text" name="input1" id="input1" required>
-                    <span class="focus-input100" data-placeholder="Enter Inputs:"></span>
-                </div>
-                <?php echo $form_input; ?>
-                <br>
-                <button class="lil-btn" id="nextIn">
-                    <input type="submit" value="Randomize">
-                </button>
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                <input class="input100" type="text" name="input1" id="input1" required>
+                <span class="focus-input100" data-placeholder="Enter Inputs:"></span>
             </div>
-            </form>
-    </div>     -->
+            <br>
+            <button class=lil-btn id="nextIn">Randomize</button>
+        </div>
+    </div>    
 
     <script>
     // Get the modal
@@ -126,7 +110,9 @@ include("../php/randomizer.php");
             modal2.style.display = "none";
         }
     </script>
-    <!-- Ends here -->
+    
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -140,35 +126,5 @@ include("../php/randomizer.php");
             decision
         </span>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div>
-        <span class="note">
-            Your Options Were:
-            <span class="options">
-                <ul>
-                    <li>option 1</li>
-                    <li>option 2</li>
-                    <li>option 3</li>
-                </ul>
-            </span>
-        </span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
 </body>
 </html>
