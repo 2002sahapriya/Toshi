@@ -29,46 +29,64 @@ include('../php/profile.php');
 	<br>
 	<div>
 		<div>
-		
 			<span class="page-header">
-				Profile<br>
+				Profile<br><br>
 				
 				<span class="username-text">
 					Hi,
 					<?php echo $user_data['firstname'] . " " . $user_data['lastname']; ?>
-				</span>
-			
-				
+				</span><br>
 			</span>
 		</div>
-
+	</div>
+	<br>
+	<br>
+	<br>
+	<div style="margin-left:700px;">
+		<span class="user-info">
+			<span class="profile-label-text">Firstname</span> 
+			<span class="profile-text">
+				<?php echo $user_data['firstname']?>
+			</span>
+		</span>
+		<span class="user-info">
+			<span class="profile-label-text">Lastname</span>
+			<span class="profile-text">
+				<?php echo $user_data['lastname']?>
+			</span>
+		</span>
 		
 	</div>
 	<br>
 	<br>
-	<div> 
+	<br>
+	<div style="margin-left:450px;"> 
 		<span class="user-info">
-			First Name 
+			<span class="profile-label-text">Username</span>
+			<span class="profile-text">
+				<?php echo $user_data['username']?>
+			</span>
 		</span>
 		<span class="user-info">
-			Last Name
+			<span class="profile-label-text">Email</span>
+			<span class="profile-text">
+				<?php echo $user_data['email']?>
+			</span>
 		</span>
-		<span class="user-info">
-			Email 
-		</span>
-	</div>
+		
+	</div>	
 	<br>
 	<br>
 	<br>
-	<div> 
-		<span class="user-info">
-			Username
-		</span>
+	<br>
+	<div style="margin-left:600px;">
 		<span class="user-info">
 			Resest Password
 		</span>
+		<span class="user-info">
+			Set Preferences
+		</span>
 	</div>	
-	<div class="user-info">Set Preferences</div>	
 
 
 </body>
