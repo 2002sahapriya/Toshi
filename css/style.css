@@ -267,6 +267,11 @@ font-family: Poppins-Medium;
 .options {
     background: #FFFBEC;
     width: 75px;
+    position: absolute;
+    top: 125%;
+    left: 40%;
+    justify-content: center;
+    align-items: top;
 }
 
 .modal {
