@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toshi - Profile</title>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="top-bar">
+		<img src="../assets/ToshiWithSlogan1.png" alt="Toshi Logo" height = 100%>
+		<a class = "menu-btn1" href="dashboard.html">Dashboard</a>
+		<a class = "menu-btn2" href="profile.html">Profile</a>
+		<a class = "menu-btn3" href="aboutus.html">About Us</a>
+		<a class = "menu-btn4" href="index.html">Logout</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>
+		<span class="page-header">
+			Profile
+		</span>
+	</div>
+	<style>		
+		/* The Modal (background) */
+	  </style>
+	  </head>
+	  <body>
+	  
+	  <h2>Modal Example</h2>
+	  
+	  <!-- Trigger/Open The Modal -->
+	  <button class="dash-btn" id="myBtn">Open Modal</button>
+	  
+	  <!-- The Modal -->
+	  <div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+			<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+				<input class="input100" type="text" name="email" id="email" required>
+				<span class="focus-input100" data-placeholder="How Many Inputs?"></span>
+			</div>
+			<br>
+			<button class=lil-btn id="nextBtn">Next</button>
+		</div>
+	  </div>
+	  
+	  <div id="nextModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		  <span class="close2">&times;</span>
+			<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+				<input class="input100" type="text" name="email" id="email" required>
+				<span class="focus-input100" data-placeholder="Enter Inputs:"></span>
+			</div>
+			<br>
+			<button class=lil-btn id="nextBtn">Next</button>
+		</div>
+	  </div>
+
+	  <script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		</script>
+
+		<script>
+			var modal2 = document.getElementById("nextModal");
+		
+			// Get the button that opens the modal
+			var btn = document.getElementById("nextBtn");
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close2")[0];
+			
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "none";
+				modal2.style.display = "block";
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal2.style.display = "none";
+			}
+		</script>
+
+</body>
+</html>
