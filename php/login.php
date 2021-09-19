@@ -51,6 +51,7 @@
                 $user_data = mysqli_fetch_assoc($result);
                 if($user_data['user_password'] === $password && $user_data['email'] === $email && $user_data['username'] === $username) {
                     echo("<script>console.log('Login access granted')</script>");
+                    $_SESSION["userid"] = $user_data["id"];
                     header("Location: dashboard.html");
                     
                 } else {

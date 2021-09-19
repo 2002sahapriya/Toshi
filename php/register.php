@@ -1,6 +1,10 @@
 <?php
 session_start();
 include("connection.php");
+include("functions.php");
+
+// check session
+$user_data= check_login($connect);
 
 // variables
 $firstname = NULL;
@@ -96,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         
         if ($result) {
             echo ("<script>console.log('User added to database')</script>");
-            header("Location: dashboard.html");
+            header("Location: login.html");
             die("<script>console.log('Registration completed.')</script>");
         } else {
             $server_err = "Registration failed. Please try again with proper values.";

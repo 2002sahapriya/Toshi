@@ -14,10 +14,4 @@
     } else {
         echo ('<script>console.log("Database connected.");</script>');
     }
-
-    // function check_login($connection) {
-    //     if(isset($_SESSION['user_id'])) {
-    //         $id = $_SESSION['user_id'];
-    //     }
-    // }
 ?>

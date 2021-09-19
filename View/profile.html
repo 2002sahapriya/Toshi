@@ -1,3 +1,7 @@
+<?php
+include('../php/profile.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +28,21 @@
 	<br>
 	<br>
 	<div>
-		<span class="page-header">
-			Profile
-		</span>
+		<div>
+		
+			<span class="page-header">
+				Profile<br>
+				
+				<span class="username-text">
+					Hi,
+					<?php echo $user_data['firstname'] . " " . $user_data['lastname']; ?>
+				</span>
+			
+				
+			</span>
+		</div>
+
+		
 	</div>
 	<br>
 	<br>
