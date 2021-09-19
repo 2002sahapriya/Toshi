@@ -223,12 +223,32 @@ h2 {
     left: 34%; 
 }
 
-.toshidecides {
+.toshidecidesbar {
     width: 100%;
     height: 10%;
     background: #D0B1EF;
   }
-  
+
+.toshidecides {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #000000;
+  line-height: 1.5;
+}
+
+.decision {
+font-family: Poppins-Medium;
+  font-weight: bold;
+  font-size: 90px;
+  color: #A162DF;
+  position:absolute;
+  top: 80%;
+  left: 35%;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
