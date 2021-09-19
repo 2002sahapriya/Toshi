@@ -42,7 +42,7 @@
 }
 
 .page-content {
-  width: 600px;
+  width: 100%;
   background: #FFFBEC;
   overflow: hidden;
 
@@ -62,23 +62,40 @@
 
 .top-bar {
   width: 100%;
-  height:100px;
+  height: 10%;
   background: #FFFBEC;
 }
 
-.menu-btn {
+.menu-btn1 {
   position: absolute;
-  left: 1075px;
+  left: 60%;
   top: 35px;
   font-family: Poppins-Regular;
 	font-size: 20px;
 	color: #666666;
   line-height: 1.5;
 }
-
 .menu-btn2 {
   position: absolute;
-  left: 1240px;
+  left: 72%;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+.menu-btn3 {
+  position: absolute;
+  left: 80%;
+  top: 35px;
+  font-family: Poppins-Regular;
+	font-size: 20px;
+	color: #666666;
+  line-height: 1.5;
+}
+.menu-btn4 {
+  position: absolute;
+  left: 90%;
   top: 35px;
   font-family: Poppins-Regular;
 	font-size: 20px;
@@ -87,6 +104,8 @@
 }
 
 .dash-btn {
+  width: 33%;
+  height: 20%;
   justify-content:center;
   text-align: center;
   font-family: The-Girl-Next-Door;
