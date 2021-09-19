@@ -1,0 +1,130 @@
+<?php
+include("../php/randomizer.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+<!--===============================================================================================-->	
+<link rel="stylesheet" type="text/css" href="../css/util.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--===============================================================================================-->
+</head>
+<body>
+    <div class="top-bar">
+		<img src="../assets/ToshiWithSlogan1.png" alt="Toshi Logo" height = 100%>
+		<a class = "menu-btn1" href="dashboard.html">Dashboard</a>
+		<a class = "menu-btn2" href="profile.html">Profile</a>
+		<a class = "menu-btn3" href="aboutus.html">About Us</a>
+		<a class = "menu-btn4" href="logout.html">Logout</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>
+		<span class="page-header">
+			Coin Flip
+		</span>
+	</div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button id="get-started">
+            <span class="startrandom">
+                Get Started
+            </span>
+        </button>
+    </div>
+
+     <!-- The Modal -->
+    <div id="modal1" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                <input class="input100" type="text" name="num-inputs" id="n-inputs" required>
+                <span class="focus-input100" data-placeholder="How Many Inputs?"></span>
+            </div>
+            <br>
+            <button class=lil-btn id="nextBtn">Next</button>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                <input class="input100" type="text" name="input1" id="input1" required>
+                <span class="focus-input100" data-placeholder="Enter Inputs:"></span>
+            </div>
+            <br>
+            <button class=lil-btn id="nextIn">Randomize</button>
+        </div>
+    </div>    
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("modal1");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("get-started");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    </script>
+
+    <script>
+        var modal2 = document.getElementById("modal2");
+    
+        // Get the button that opens the modal
+        var btn = document.getElementById("nextBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close2")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "none";
+            modal2.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal2.style.display = "none";
+        }
+    </script>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="toshidecidesbar">
+        <span class="toshidecides">
+            Toshi  Decides...
+        </span>
+        <span class="decision">
+            decision
+        </span>
+    </div>
+</body>
+</html>
