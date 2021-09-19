@@ -3,9 +3,6 @@ session_start();
 include("connection.php");
 include("functions.php");
 
-// check session
-$user_data= check_login($connect);
-
 // variables
 $firstname = NULL;
 $lastname = NULL;
