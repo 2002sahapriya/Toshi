@@ -107,3 +107,40 @@
     line-height: 1.2;
     text-align: center;
   }
+
+  button { 
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+  text-decoration: none;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+
+button:focus {
+	outline: none !important;
+}
+
+button:hover {
+	text-decoration: underline;
+  color: #A162DF;
+  color: -webkit-linear-gradient(left, #feef6a, #A162DF);
+  color: -o-linear-gradient(left, #feef6a, #A162DF);
+  color: -moz-linear-gradient(left, #feef6a, #A162DF);
+  color: linear-gradient(left, #feef6a, #A162DF);
+}
+
+h2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: top;
+}
