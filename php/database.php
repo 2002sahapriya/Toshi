@@ -39,6 +39,7 @@
     
     if($connect->query($loginsql) === TRUE) {
         echo "Table created successfully.";
+        header("Location: ../View/index.html");
     } else {
         echo "Error creating table: " . $connect->error;
     }
